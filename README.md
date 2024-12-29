@@ -16,8 +16,8 @@ Copy the addons/debugdraw2d/ folder into addons/debugdraw2d/ in your project.
 You can install the addon via git by executing:
 
 ```
-git clone git@github.com:AlmostBearded/GodotDebugDraw.git ADDONS_FOLDER
-mv ADDONS_FOLDER/debugdraw2d $yourproject/addons/debugdraw2d
+git clone git@github.com:AlmostBearded/GodotDebugDraw.git
+mv GodotDebugDraw/addons/debugdraw2d $yourproject/addons/debugdraw2d
 ``` 
 
 ## Manually 
@@ -26,23 +26,16 @@ The alternative to installing via git would be to simply download a zip file of 
 extract it, and copy the `debugdraw2d` folder into your `addons` folder.
 
 
-## Autoload
+## Enable Plugin
 
-The only thing left to do is to add an autoload for the `DebugDraw2D` script. 
-
-(If anyone knows how I could automate this please tell me!)
-
-Steps:
-1. Go to Project > Project Settings
-2. Go to the Autoload tab
-3. Add the DebugDraw2D script by locating it via it's path and naming it DebugDraw2D
-
-The result should look something like this: ![](https://i.imgur.com/31EuOoz.png)
+[Enable the GodotDebugDraw
+plugin](https://docs.godotengine.org/en/stable/tutorials/plugins/editor/installing_plugins.html)
+and it will setup a `DebugDraw2D` global. 
 
 
 # Usage
 
-Because you added an Autoload to the DebugDraw2D script you can access it from everywhere with `DebugDraw2D`.
+There's a DebugDraw2D Global, you can access it from everywhere with `DebugDraw2D`.
 
 Some of the available methods:
 - `DebugDraw2D.line(...)`
